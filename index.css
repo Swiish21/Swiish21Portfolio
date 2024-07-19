@@ -6,6 +6,7 @@ body {
 
 }
 .navigation {
+    padding: 1px;
     width: 70%;
     margin: auto;
     display: flex;
@@ -19,6 +20,7 @@ body {
     transform: scale(0.5);
     margin-left: 2px;
      text-align: center;
+;
 }
 
 .logo img:hover {
@@ -28,13 +30,22 @@ body {
 }
 
 .navlinks {
+    padding: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    /* height: 60px; */
     background-color: rgb(0, 7, 46);
     text-align: right;
     margin-top: 5px;
+}
+
+.navlinks > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 55px;
+    font-weight: 700;
 }
 
 html {
@@ -66,5 +77,9 @@ html {
 .names > .smallname {
     font-size: 20px;
     margin-left: 25%;
+    color: white;
+}
+
+.sections > section {
     color: white;
 }
