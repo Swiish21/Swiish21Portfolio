@@ -260,3 +260,8 @@ form p {
     padding-bottom: 10px;
     padding-top: 90px;
 }
+
+.scrollbutton :hover{
+    transform: scale(1.3); 
+    transition: transform 0.2s;
+}
