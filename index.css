@@ -1,7 +1,7 @@
 body {
     background-color: rgb(0, 7, 46);
     background-size: cover;
-    background-image: url(sab);
+    background-image: url(milad-fakurian-7W3X1dAuKqg-unsplash.jpg);
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -48,6 +48,7 @@ body, html {
     text-align: right;
     margin-top: 5px;
     margin-right: 1px;
+    position: relative;
 }
 
 .navlinks > a {
@@ -56,6 +57,11 @@ body, html {
     font-size: 20px;
     margin: 0 55px;
     font-weight: 700;
+}
+
+.navlinks > a:hover {
+  padding-bottom: 10px;
+  transition-duration: 0.2s;
 }
 
 html {
@@ -79,6 +85,7 @@ html {
 }
 
 .names > .bigname {
+  opacity: 0.1;
     width: 100%;
     margin-top: 1px;
     margin-bottom: 5px;
@@ -88,13 +95,32 @@ html {
     -webkit-text-stroke: thin #ffffff;
     font-family: Arial, sans-serif;
     font-weight: 700;
+    align-items: center;
+}
+
+.names > .bigname1 {
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  margin-left: 9%;
+  font-size: 60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: thin #ffffff;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  align-items: center;
 }
 
 .names > .bigname:hover {
     opacity: 0.98;
     transition: transform 0.2s;
     transform: scale(1.1);
+    /* background: -webkit-linear-gradient(#0077ff, #2fff4b);
+    -webkit-background-clip: text; */
     -webkit-text-fill-color: white;
+    /* -webkit-text-stroke: 0; */
+    color: white;
 }
 
 .names > .smallname {
@@ -169,7 +195,7 @@ h2 {
 .left-container {
   flex:1;
   height:480px;
-  background-color: rgb(0, 7, 46);
+  background-color: rgb(0, 150, 137);
 }
 .right-container {
   display:flex;
@@ -221,8 +247,8 @@ input:focus, textarea:focus{
 
 button {
 	border-radius: 20px;
-	border: 1px solid rgb(0, 7, 46);
-	background-color: rgb(0, 7, 46);
+	border: 1px solid rgb(0, 150, 137);
+	background-color: rgb(0, 150, 137);
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -297,3 +323,6 @@ form p {
   padding-bottom: 10px;
   padding-top: 90px;
 }
+
+
+
