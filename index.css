@@ -750,6 +750,7 @@ footer{
   }
 }
 
+/* the circle that highlights when you hover on info about a certain school */
 #experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
   position: absolute;
   width: 50px;
@@ -764,35 +765,6 @@ footer{
   transition: all .3s ease
 }
 
-@media only screen and (max-width: 1000px) {
-  #experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
-      top:5px;
-      left: 20px
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
-      width:40px;
-      height: 40px;
-      top: 10px;
-      left: 15px
-  }
-}
-
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
-  background-repeat: no-repeat;
-  background-size: 100%
-}
-
 @media only screen and (max-width: 480px) {
   #experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite {
       width:20px;
@@ -800,22 +772,6 @@ footer{
       margin-left: -10px;
       margin-top: -10px
   }
-}
-
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.university {
-  background-image: url(../img/icons/graduate-cap.png)
-}
-
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.research {
-  background-image: url(../img/icons/search.png)
-}
-
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.industry {
-  background-image: url(../img/icons/briefcase.png)
-}
-
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.academic {
-  background-image: url(../img/icons/notebook.png)
 }
 
 #experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
@@ -913,19 +869,20 @@ footer{
   color: #00dded
 }
 
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .job-desc {
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .sch-desc {
   margin: 1em 0;
   font-size: 1em;
   line-height: 1.5
 }
 
 @media only screen and (max-width: 480px) {
-  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content .job-desc {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content .sch-desc {
       font-size:1em;
       line-height: 1.5
   }
 }
 
+/* positioning of the dates on the timeline */
 #experience-section .experience-wrapper #timeline .timeline-block .date {
   font-size: 1em;
   font-weight: 500;
@@ -956,6 +913,7 @@ footer{
   }
 }
 
+/* styling for the arrow pointing down on the timeline */
 #experience-section .down-arrow {
   display: block;
   margin: 0 auto;
@@ -980,4 +938,6 @@ footer{
       margin-left:3.5px
   }
 }
+
+/* experience section ends here */
 
