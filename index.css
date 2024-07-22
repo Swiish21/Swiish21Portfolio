@@ -1,17 +1,22 @@
 body {
     /* background-color: rgb(0, 7, 46); */
     background-size: cover;
-    background-image: url(faded_gallery-OfdOEdGYiuk-unsplash.jpg);
-    margin: 0;
-    font-family: Arial, sans-serif;
+    background-image: url(faded_gallery-nEatfFMN1TU-unsplash.jpg);
+    /* margin: 0; */
     line-height: 1.6;
+    align-items: center;
 
+}
+
+body, html {
+    height: 150%;
 }
 
 * {
     box-sizing: border-box;
 }
 
+/* styling for the navigation section */
 .navigation {
     padding: 1px;
     width: 70%;
@@ -60,10 +65,15 @@ body {
   transition-duration: 0.2s;
 }
 
+/* end of nav section */
+
+/* instruction on how to scroll */
 html {
     scroll-behavior: smooth;
 }
 
+
+/* styling for the main sections of the website */
 .sections {
     display: flex;
     flex-direction: column;
@@ -71,6 +81,8 @@ html {
     gap: 10rem;
 }
 
+
+/* styling for the names at the top section */
 .names {
     width: 70%;
     margin-top: 150px;
@@ -131,33 +143,13 @@ html {
     margin-top: 150px;
 }
 
-.names > .briefintro {
-    font-size: 15px;
-    margin-left: 22%;
-    color: white;
-}
-
 .sections > section {
     color: white;
 }
+/* end of names section */
 
-/* banner section styles */
-.banner {
-    text-align: center;
-    background-color: #ffffff;
-    margin: 0 auto;
-}
- 
-.banner img {
-    max-width: 100%;
-    height: auto;
-}
 
-* {
-  box-sizing:border-box;
-  margin:0;
-}
-
+/* styling for the social media icons below the name */
 .social-media {
   position: relative; /* Keep the icons moving on the respective section */
   margin-left: 36%;
@@ -174,118 +166,17 @@ html {
   text-decoration: none; /* Remove underline from links */
 }
 
-.social-media a:hover {
-  color: rgba(0, 255, 234, 0.747); /* Change the color on hover */
+
+
+.social-media a :hover {
+  color: rgb(0, 155, 155); /* Change the color on hover */
 }
 
 .social-media i {
   font-size: 2rem; /* Adjust icon size */
 }
+/* end of social media section */
 
-
-.container {
-	background-color: white;
-	border-radius: 8px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			        0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
-  min-width:370px;
-  margin-bottom: 0px;
-}
-
-h2 {
-  font-size:2rem;
-  margin-bottom:1rem;
-}
-.form-container {
-  display:flex;
-}
-
-.left-container {
-  flex:1;
-  height:480px;
-  background-color: rgb(0, 177, 162);
-}
-.right-container {
-  display:flex;
-  flex:1;
-  height:460px;
-  background-color: white;
-  justify-content:center;
-  align-items:center;
-}
-
-.left-container {
-  display:flex;
-  flex:1;
-  height:480px;
-  justify-content:center;
-  align-items:center;
-  color:white;
-}
-
-.left-container p {
-  font-size:0.9rem;
-}
-
-.right-inner-container {
-  width:80%;
-  height:140%;
-  text-align:center;
-}
-
-.left-inner-container {
-  height:50%;
-  width:80%;
-  text-align:center;
-  line-height:22px;
-}
-
-.left-inner-container > p{
-  font-size: 15px;
-}
-
-input, textarea {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 5px 0;
-	width: 100%;
-  font-size:1rem;
-}
-
-input:focus, textarea:focus{
-  outline:1px solid rgb(0, 7, 46);
-}
-
-button {
-	border-radius: 20px;
-	border: 1px solid rgb(0, 214, 196);
-	background-color: rgb(0, 177, 162);
-	color: #FFFFFF;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-  cursor:pointer;
-  margin-bottom: 50px;
-}
-
-button:hover {
-  opacity:0.98;
-  transition: transform 0.2s;
-  transform: scale(1.1);
-}
-
-form p {
-  text-align:left;
-}
 
 .button {
   transform: scale(0.28);
@@ -303,17 +194,26 @@ form p {
   text-align: center;
   margin-left: 3%;
   padding-bottom: 10px;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 #id2 > h2{
-  font-size: 25px;
+  font-size: 18px;
   width: 70%;
   color: rgb(0, 7, 46);
   font-family: Arial, sans-serif;
   text-align: center;
   margin-left: 16%;
-  padding-bottom: 130px
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 100px
+
+  /* font-size: 18px;
+  width: 70%;
+  color: rgb(0, 7, 46);
+  text-align: center;
+  margin-left: 16%;
+  padding-bottom: 130px */
 }
 
 #id4 > h1{
@@ -346,93 +246,96 @@ form p {
   margin: 0;
   box-sizing: border-box;
 }
-footer{
-  background-color: rgb(7, 7, 7);
-  opacity: 0.95;
-}
-.footerContainer{
-  width: 100%;
-  padding: 40px 30px 20px ;
-}
-.socialIcons{
-  display: flex;
-  justify-content: center;
-}
-.socialIcons a{
-  text-decoration: none;
-  padding:  10px;
-  background-color: white;
-  margin: 10px;
-  border-radius: 50%;
-  transform: scale(1.5);
-}
-.socialIcons a i{
-  font-size: 2em;
-  color: black;
-  opacity: 0,9;
-}
-.footerNav{
-  margin: 30px 0;
-}
-.footerNav ul{
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-.footerNav ul li a{
-  color:rgb(49, 49, 49);
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.7em;
-  transition: 0.2s;
 
+
+/* progress bar */
+.myprogress {
+min-width: 100%;
+margin: 0px auto;
+text-align: center;
+margin-bottom: 10px;
 }
-.footerNav ul li a:hover{
-  /* opacity: 1; */
-  color: white;
-  padding-bottom: 10px;
-  transition-duration: 0.2s;
+.myprogress .circle,
+.myprogress .bar {
+display: inline-block;
+background: #fff;
+width: 100px; 
+height: 100px;
+border-radius: 80px;
+border: 1px solid #d5d5da;
 }
-.footerBottom{
-  background-color: rgb(0, 0, 0);
-  padding: 20px;
+.myprogress .circle:hover {
+cursor: pointer;
+transform: scale(1.3);
+transition: .2S;
+background-color: rgb(255, 255, 255);
+border: none;
+}
+.myprogress .bar {
+position: relative;
+width: 80px;
+height: 2px;
+top: -5px;
+border: 0px solid #d5d5da;
+background:#fffcfc;
+}
+.myprogress .circle .label {
+display: inline-block;
+width: 40px;
+height: 40px;
+line-height: 30px;
+border-radius: 40px;
+font-size: 24px;
+}
+.myprogress .circle .title {
+color: rgb(0, 0, 0);
+font-size: 18px;
+line-height: 100px;
+font-weight: 700;
+transform: scale(2.5);
+}
+
+.myprogress .circle .title:hover {
+color: rgb(0, 0, 0);
+}
+.dprocess {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: none;
+  margin-left: 37%;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.gmoney {
+  display: flex;
+  justify-items: center;
+  margin-left: 28.5%;
   text-align: center;
-  opacity: 0.7;
-}
-.footerBottom p{
   color: white;
-}
-.designer{
-  opacity: 0.95;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
-@media (max-width: 700px){
-  .footerNav ul{
-      flex-direction: column;
-  } 
-  .footerNav ul li{
-      width:100%;
-      text-align: center;
-      margin: 10px;
-  }
-  .socialIcons a{
-      padding: 8px;
-      margin: 10px;
-  }
+  padding-top: 30px;
+  margin-top: 100px;
 }
 
-*{
-  font-family: 'Gill Sans', sans-serif;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.explanation {
+  background-color: rgb(255, 255, 255);
+  border-top: 30px;
 }
 
-/* below is css statements for the skills section in the website */
+.explanation1 {
+  font-size: 18px;
+  width: 70%;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-left: 16%;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 100px
+}
+  /* end of progress bar */
 
+/* below is the css styling for the skills section in the website */
 .skill {
   background-color: rgb(7, 7, 7);
   border-radius: 9px;
@@ -473,6 +376,7 @@ footer{
   height: 40px;
   float: left;
   background-color: rgb(0, 255, 234);
+
 }
 
 .html {
@@ -646,7 +550,7 @@ footer{
   #experience-section .experience-wrapper #timeline:before {
       left:20px;
       margin-left: 0
-  }
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -877,8 +781,8 @@ footer{
 
 @media only screen and (max-width: 480px) {
   #experience-section .experience-wrapper #timeline .timeline-block .timeline-content .sch-desc {
-      font-size:1em;
-      line-height: 1.5
+    font-size:1em;
+    line-height: 1.5
   }
 }
 
@@ -904,7 +808,7 @@ footer{
       top: auto;
       bottom: 20px;
       left: 95px
-  }
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -930,14 +834,194 @@ footer{
 @media only screen and (max-width: 1000px) {
   #experience-section .down-arrow {
       margin-left:13.5px
+    }
   }
-}
-
-@media only screen and (max-width: 480px) {
-  #experience-section .down-arrow {
+  
+  @media only screen and (max-width: 480px) {
+    #experience-section .down-arrow {
       margin-left:3.5px
+    }
+  }
+  /* experience section ends here */
+
+  /* styling for the contact form  above the footer*/
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    min-width:370px;
+    margin-bottom: 0px;
+  }
+  
+  h2 {
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  .form-container {
+    display:flex;
+  }
+  
+  .left-container {
+    flex:1;
+    height:480px;
+    background-color: rgb(0, 177, 162);
+  }
+  .right-container {
+    display:flex;
+    flex:1;
+    height:460px;
+    background-color: white;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .left-container {
+    display:flex;
+    flex:1;
+    height:480px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+  }
+  
+  .left-container p {
+    font-size:0.9rem;
+  }
+  
+  .right-inner-container {
+    width:80%;
+    height:140%;
+    text-align:center;
+  }
+  
+  .left-inner-container {
+    height:50%;
+    width:80%;
+    text-align:center;
+    line-height:22px;
+  }
+  
+  .left-inner-container > p{
+    font-size: 15px;
+  }
+  
+  input, textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 5px 0;
+    width: 100%;
+    font-size:1rem;
+  }
+  
+  input:focus, textarea:focus{
+    outline:1px solid rgb(0, 7, 46);
+  }
+  
+  button {
+    border-radius: 20px;
+    border: 1px solid rgb(0, 214, 196);
+    background-color: rgb(0, 177, 162);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor:pointer;
+    margin-bottom: 50px;
+  }
+  
+  button:hover {
+    opacity:0.98;
+    transition: transform 0.2s;
+    transform: scale(1.1);
+  }
+  
+  form p {
+    text-align:left;
+  }
+  /*end of contact form styling*/
+
+  /* footer section starts here */
+footer{
+  background-color: rgb(7, 7, 7);
+  opacity: 0.95;
+}
+.footerContainer{
+  width: 100%;
+  padding: 40px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:rgb(49, 49, 49);
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.7em;
+  transition: 0.2s;
+
+}
+.footerNav ul li a:hover{
+  /* opacity: 1; */
+  color: white;
+  padding-bottom: 10px;
+  transition-duration: 0.2s;
+}
+.footerBottom{
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  opacity: 0.7;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 10px;
   }
 }
 
-/* experience section ends here */
+*{
+  font-family: 'Gill Sans', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* end of footer section */
 
+/* end of css document*/
